@@ -26,15 +26,9 @@ We will be designing a system with the following requirements:
 - Deleted
 - Un-Deleted
 
-**Guest:** 
-- UserType
-
-**Member**
+**User:**
 - UserType
 - Badge
-
-**Moderator:**
-- UserType
 
 **Question:**
 - QuestionType
