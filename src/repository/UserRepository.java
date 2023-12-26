@@ -1,5 +1,6 @@
 package repository;
 
+import exception.UserNotFoundException;
 import model.User;
 
 import java.util.HashMap;
