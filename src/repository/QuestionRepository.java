@@ -15,7 +15,7 @@ public class QuestionRepository {
     public Question get(int questionId) {
         Question question = questionMap.get(questionId);
         if (question == null) {
-            // throw new QuestionNotFoundException("Question not found for : " + questionId);
+            throw new QuestionNotFoundException("Question not found for : " + questionId);
         }
         return question;
     }
