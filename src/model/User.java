@@ -50,6 +50,10 @@ public class User {
         return commentsAdded;
     }
 
+    public void setBadgeCount(int badgeCount) {
+        this.badgeCount = badgeCount;
+    }
+
     public int getBadgeCount() {
         return badgeCount;
     }
