@@ -7,7 +7,7 @@ public class Question {
     private String content;
     private QuestionType questionType;
     private boolean flagged;
-    private boolean hasBounty;
+    private int bounty;
     private int votes;
     private int votesToClose;
     private String tag;
@@ -47,12 +47,12 @@ public class Question {
         this.flagged = flagged;
     }
 
-    public boolean hasBounty() {
-        return hasBounty;
+    public int getBounty() {
+        return bounty;
     }
 
-    public void setHasBounty(boolean hasBounty) {
-        this.hasBounty = hasBounty;
+    public void setBounty(int bounty) {
+        this.bounty = bounty;
     }
 
     public int getVotes() {

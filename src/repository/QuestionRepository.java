@@ -1,5 +1,6 @@
 package repository;
 
+import exception.QuestionNotFoundException;
 import model.Question;
 
 import java.util.HashMap;
