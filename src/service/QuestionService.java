@@ -1,5 +1,6 @@
 package service;
 
+import model.Answer;
 import model.Question;
 
 import java.util.List;
@@ -13,9 +14,9 @@ public interface QuestionService {
 
     void upvoteQuestion(int questionId);
 
-    void addAnswerToOpenQuestion(int questionId, Answer answer);
+    void addAnswerToOpenQuestion(int questionId, int answerId);
 
-    void addCommentToQuestion(int questionId, Comment comment);
+    void addCommentToQuestion(int questionId, int commentId);
 
     void flagQuestion(int questionId);
 
