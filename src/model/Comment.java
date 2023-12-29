@@ -6,7 +6,7 @@ public class Comment {
     private int commentId;
     private String content;
     private int votes;
-    private Set<Integer> flags;
+    private Boolean flag;
 
     // Getters and setters
 
@@ -34,11 +34,11 @@ public class Comment {
         this.votes = votes;
     }
 
-    public Set<Integer> getFlags() {
-        return flags;
+    public Boolean getFlag() {
+        return flag;
     }
 
-    public void setFlags(Set<Integer> flags) {
-        this.flags = flags;
+    public void setFlag(Boolean flag) {
+        this.flag = flag;
     }
 }
