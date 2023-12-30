@@ -87,4 +87,12 @@ public class Question {
     public void setVotesToDelete(int votesToDelete) {
         this.votesToDelete = votesToDelete;
     }
+
+    public int getAnswerId() {
+        return answerId;
+    }
+
+    public void setAnswerId(int answerId) {
+        this.answerId = answerId;
+    }
 }
