@@ -13,6 +13,7 @@ public class Question {
     private String tag;
     private int votesToDelete;
     private int answerId;
+    private int commentId;
 
     // Getters and Setters
 
