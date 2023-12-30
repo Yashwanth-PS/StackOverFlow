@@ -96,4 +96,12 @@ public class Question {
     public void setAnswerId(int answerId) {
         this.answerId = answerId;
     }
+
+    public int getCommentId() {
+        return commentId;
+    }
+
+    public void setCommentId(int commentId) {
+        this.commentId = commentId;
+    }
 }
