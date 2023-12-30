@@ -45,8 +45,7 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public void addCommentToQuestion(int questionId, int commentId) {
         Question question = questionRepository.get(questionId);
-        if (question != null) {
-            question.addComment(commentId);
+        question.setCommentId(commentId);
             questionRepository.updateQuestion(question);
         } else {
             // Handle question not found error

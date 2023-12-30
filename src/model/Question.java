@@ -2,6 +2,8 @@ package model;
 
 import model.constants.QuestionType;
 
+import java.util.List;
+
 public class Question {
     private int questionId;
     private String content;
@@ -13,7 +15,7 @@ public class Question {
     private String tag;
     private int votesToDelete;
     private int answerId;
-    private int commentId;
+    private List<Integer> commentIdList;
 
     // Getters and Setters
 
@@ -97,11 +99,11 @@ public class Question {
         this.answerId = answerId;
     }
 
-    public int getCommentId() {
-        return commentId;
+    public List<Integer> getCommentIdList() {
+        return commentIdList;
     }
 
-    public void setCommentId(int commentId) {
-        this.commentId = commentId;
+    public void setCommentIdList(List<Integer> commentIdList) {
+        this.commentIdList = commentIdList;
     }
 }
