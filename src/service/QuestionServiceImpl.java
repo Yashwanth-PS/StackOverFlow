@@ -38,13 +38,8 @@ public class QuestionServiceImpl implements QuestionService {
     @Override
     public void addAnswerToOpenQuestion(int questionId, int answerId) {
         Question question = questionRepository.get(questionId);
-        if (question != null) {
-            question.addAnswer(answerId);
-            questionRepository.updateQuestion(question);
-        } else {
-            // Handle question not found error
-            throw new IllegalArgumentException("Question not found for adding answer: " + questionId);
-        }
+        question.setAnswerId(answerId);
+        questionRepository.put(question);
     }
 
     @Override
